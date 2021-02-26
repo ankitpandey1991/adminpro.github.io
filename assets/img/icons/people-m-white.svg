@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__people_alt-24px" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#fff;fill-rule:evenodd}
+        </style>
+    </defs>
+    <g id="prefix__Group_2787" data-name="Group 2787">
+        <path id="prefix__Rectangle_364" d="M0 0H24V24H0z" data-name="Rectangle 364" style="fill:none"/>
+    </g>
+    <g id="prefix__Group_2793" data-name="Group 2793">
+        <g id="prefix__Group_2792" data-name="Group 2792">
+            <g id="prefix__Group_2788" data-name="Group 2788">
+                <path id="prefix__Path_322" d="M16.67 13.13A4.651 4.651 0 0 1 19 17v3h4v-3c0-2.18-3.57-3.47-6.33-3.87z" class="prefix__cls-2" data-name="Path 322"/>
+            </g>
+            <g id="prefix__Group_2789" data-name="Group 2789">
+                <circle id="prefix__Ellipse_36" cx="4" cy="4" r="4" data-name="Ellipse 36" transform="translate(5 4)" style="fill:#fff"/>
+            </g>
+            <g id="prefix__Group_2790" data-name="Group 2790">
+                <path id="prefix__Path_323" d="M15 12a4 4 0 0 0 0-8 4.178 4.178 0 0 0-1.33.24 5.98 5.98 0 0 1 0 7.52A4.178 4.178 0 0 0 15 12z" class="prefix__cls-2" data-name="Path 323"/>
+            </g>
+            <g id="prefix__Group_2791" data-name="Group 2791">
+                <path id="prefix__Path_324" d="M9 13c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z" class="prefix__cls-2" data-name="Path 324"/>
+            </g>
+        </g>
+    </g>
+</svg>

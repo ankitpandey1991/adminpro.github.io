@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #fff;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="#">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono%7CArvo:400%7CRoboto:300,400,500,700%7CCookie" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.7/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="vendor/perfect-scrollbar.css">
+    <link rel="stylesheet" href="vendor/c3.min.css">
+    <link rel="stylesheet" href="css/simplify.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>File & Assets Management System</title>
+</head>
+
+<body style="overflow-x: hidden; overflow-y: hidden;" class="m-0">
+
+                <div class="container-fluid m-0 p-0">
+                    <div class="row">
+                        <div class="col-12 col-lg-12 text-center">
+                            <div class="card border-0">
+                                <img src="assets/img/icons/Group%203226.png" class="rounded mx-auto d-block img-fluid align-self-center mx-auto">
+                                <div class="align-self-center mx-auto mt-10 pb-15">
+                                    <a href="#" class="float-none text-center text-black mr-4">
+                                        <h4><strong>Oops! You Are Offline, Please Check Your Connection </strong></h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+   
+
+
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/popper.min.js"></script>
+    <script src="vendor/bootstrap.min.js"></script>
+    <script src="vendor/perfect-scrollbar.min.js"></script>
+
+    <script src="vendor/hammer.min.js"></script>
+    <script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="scripts/sidebar.min.js"></script>
+    <script src="scripts/collapsible-nav.min.js"></script>
+    <script src="vendor/color/color.min.js"></script>
+    <script src="scripts/colors.min.js"></script>
+    <script src="scripts/settings.min.js"></script>
+    <script src="scripts/card.min.js"></script>
+    <script src="scripts/simplify.min.js"></script>
+
+    <script src="vendor/d3.min.js"></script>
+    <script src="vendor/c3.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(function() {
+            $('.datepicker').datepicker();
+        });
+    </script>
+    <!--    DATA TABLE-->
+    <!--
+    <script>
+    $(document).ready(function(){
+   var table = $('#example').DataTable({
+      'ajax': 'https://gyrocode.github.io/files/jquery-datatables/arrays_id.json',
+      "searching": false,
+      "bPaginate": true,
+    "bLengthChange": false,
+    "bFilter": true,
+    "bInfo": false,
+      'columnDefs': [
+         {
+            'targets': 0,
+            'render': function(data, type, row, meta){
+               if(type === 'display'){
+                  data = '<div class="custom-control custom-checkbox"><input type="checkbox" class="dt-checkboxes custom-control-input"><label class="custom-control-label"></label></div>';
+               }
+
+               return data;
+            },
+            'checkboxes': {
+               'selectRow': true,
+               'selectAllRender': '<div class="custom-control custom-checkbox"><input type="checkbox" class="dt-checkboxes custom-control-input"><label class="custom-control-label"></label></div>'
+            }
+         }
+      ],
+      'select': 'multi',
+      'order': [[1, 'asc']]
+   });
+});
+    </script>
+-->
+
+    <!--
+    <script>
+    $(document).ready(function (){   
+   var table = $('#example').DataTable({
+      'ajax': 'https://gyrocode.github.io/files/jquery-datatables/arrays_id.json',
+      'columnDefs': [{
+         'targets': 0,
+         'searchable':false,
+         'orderable':false,
+          "searching": false,
+          "bPaginate": false,
+    "bLengthChange": false,
+    "bFilter": true,
+    "bInfo": false,
+         'className': 'dt-body-center',
+         'render': function (data, type, full, meta){
+             return '<div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" name="id[]" value="' 
+                + $('<div/>').text(data).html() + '"><label class="custom-control-label"></label></div>';
+         }
+      }],
+      'order': [1, 'asc']
+   });
+
+   // Handle click on "Select all" control
+   $('#example-select-all').on('click', function(){
+      // Check/uncheck all checkboxes in the table
+      var rows = table.rows({ 'search': 'applied' }).nodes();
+      $('input[type="checkbox"]', rows).prop('checked', this.checked);
+   });
+
+   // Handle click on checkbox to set state of "Select all" control
+   $('#example tbody').on('change', 'input[type="checkbox"]', function(){
+      // If checkbox is not checked
+      if(!this.checked){
+         var el = $('#example-select-all').get(0);
+         // If "Select all" control is checked and has 'indeterminate' property
+         if(el && el.checked && ('indeterminate' in el)){
+            // Set visual state of "Select all" control 
+            // as 'indeterminate'
+            el.indeterminate = true;
+         }
+      }
+   });
+    
+   $('#frm-example').on('submit', function(e){
+      var form = this;
+
+      // Iterate over all checkboxes in the table
+      table.$('input[type="checkbox"]').each(function(){
+         // If checkbox doesn't exist in DOM
+         if(!$.contains(document, this)){
+            // If checkbox is checked
+            if(this.checked){
+               // Create a hidden element 
+               $(form).append(
+                  $('<input>')
+                     .attr('type', 'hidden')
+                     .attr('name', this.name)
+                     .val(this.value)
+               );
+            }
+         } 
+      });
+
+      // FOR TESTING ONLY
+      
+      // Output form data to a console
+      $('#example-console').text($(form).serialize()); 
+      console.log("Form submission", $(form).serialize()); 
+       
+      // Prevent actual form submission
+      e.preventDefault();
+   });
+});
+    </script>
+-->
+
+</body>
+
+</html>

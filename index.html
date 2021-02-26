@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="#">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono%7CArvo:400%7CRoboto:300,400,500,700%7CCookie" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/perfect-scrollbar.css">
+    <link rel="stylesheet" href="vendor/c3.min.css">
+    <link rel="stylesheet" href="css/simplify.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>File & Assets Management System</title>
+</head>
+
+<body>
+
+    <div class="full-page">
+        <div class="sidebar-container">
+            <aside class="sidebar sidebar-left sidebar-fixed sidebar-dark">
+
+                <div class="scroll">
+                    <div class="sidebar-header text-white bg-info">
+                        <div class="sidebar-brand d-flex justify-content-between align-items-center">
+                            <div class="title text-truncate">
+                                <div class="d-flex mt-n1">
+                                    <div>
+                                        <img src="assets/img/face4.jpg" class="img-thumb" alt="">
+                                    </div>
+                                    <div>
+                                        <h5 class="pt-2 pl-2 name">
+                                            Hallie Goebel
+                                            <span class="text-muted small designation">Associate Analyst </span>
+                                        </h5>
+                                        <!--              <p class="text-muted small mt-n5">Project Lead</p>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display: none;" class="logo align-items-center justify-content-around hidden-xs">
+                                H
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-nav-container">
+                        <ul class="list-nav sidebar-nav list-nav-dark list-nav-dark-info">
+                            <li class="list-nav-item dashboard active">
+                                <a href="index.html" class="list-nav-link">
+                                    <span class="list-nav-icon">
+                                        <i class="dashboard-m" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="list-nav-label">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="list-nav-item">
+                                <a href="#" class="list-nav-link">
+                                    <span class="list-nav-icon">
+                                        <i class="file-m"></i>
+<!--                                        <span class="material-icons">file_copy</span>-->
+                                    </span>
+                                    <span class="list-nav-label">File Tracking</span>
+                                    <span class="list-nav-expand">
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                                <ul class="list-nav-child">
+                                    <li class="list-nav-item list-nav-child-item">
+                                        <a href="manage-files.html" class="list-nav-link">
+                                            <span class="list-nav-icon list-nav-icon-sm">
+
+                                            </span>
+                                            <span class="list-nav-label">Manage Files</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-nav-item list-nav-child-item">
+                                        <a href="#" class="list-nav-link">
+                                            <span class="list-nav-icon list-nav-icon-sm">
+
+                                            </span>
+                                            <span class="list-nav-label">Check In Files</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-nav-item list-nav-child-item">
+                                        <a href="#" class="list-nav-link">
+                                            <span class="list-nav-icon list-nav-icon-sm">
+
+                                            </span>
+                                            <span class="list-nav-label">Check Out Files</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-nav-item list-nav-child-item">
+                                        <a href="#" class="list-nav-link">
+                                            <span class="list-nav-icon list-nav-icon-sm">
+
+                                            </span>
+                                            <span class="list-nav-label">Files Inventory Cycle</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="list-nav-item">
+                                <a href="#" class="list-nav-link">
+                                    <span class="list-nav-icon">
+                                        <i class="assets-m" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="list-nav-label">Assets Tracking</span>
+                                    <span class="list-nav-expand">
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                                <ul class="list-nav-child">
+                                    <li class="list-nav-item list-nav-child-item">
+                                        <a href="#" class="list-nav-link">
+                                            <span class="list-nav-icon list-nav-icon-sm">
+                                              
+                                            </span>
+                                            <span class="list-nav-label">Manage Assets</span>
+                                            <span class="list-nav-expand">
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </span>
+                                        </a>
+                                        <ul class="list-nav-child pl-4">
+                                    <li class="list-nav-item list-nav-child-item">
+                                        <a href="#" class="list-nav-link">
+                                            <span class="list-nav-icon list-nav-icon-sm">
+
+                                            </span>
+                                            <span class="list-nav-label">Issue</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-nav-item list-nav-child-item">
+                                        <a href="#" class="list-nav-link">
+                                            <span class="list-nav-icon list-nav-icon-sm">
+
+                                            </span>
+                                            <span class="list-nav-label">Return</span>
+                                        </a>
+                                    </li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-nav-item list-nav-child-item">
+                                        <a href="#" class="list-nav-link">
+                                            <span class="list-nav-icon list-nav-icon-sm">
+                                               
+                                            </span>
+                                            <span class="list-nav-label">Create Inventory Cycle</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-nav-item list-nav-child-item">
+                                        <a href="#" class="list-nav-link">
+                                            <span class="list-nav-icon list-nav-icon-sm">
+                                               
+                                            </span>
+                                            <span class="list-nav-label">Inventory Life Cycle</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="list-nav-item">
+                                <a href="#" class="list-nav-link">
+                                    <span class="list-nav-icon">
+                                        <i class="sync-m" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="list-nav-label">Data Sync</span>
+                                    <span class="list-nav-expand">
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                                <ul class="list-nav-child">
+                                    <li class="list-nav-item list-nav-child-item">
+                                        <a href="#" class="list-nav-link">
+                                            <span class="list-nav-icon list-nav-icon-sm">
+                                                
+                                            </span>
+                                            <span class="list-nav-label">Manage Files</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-nav-item list-nav-child-item">
+                                        <a href="#" class="list-nav-link">
+                                            <span class="list-nav-icon list-nav-icon-sm">
+                                                
+                                            </span>
+                                            <span class="list-nav-label">Check In Files</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-nav-item list-nav-child-item">
+                                        <a href="#" class="list-nav-link">
+                                            <span class="list-nav-icon list-nav-icon-sm">
+                                                
+                                            </span>
+                                            <span class="list-nav-label">Check Out Files</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-nav-item list-nav-child-item">
+                                        <a href="#" class="list-nav-link">
+                                            <span class="list-nav-icon list-nav-icon-sm">
+                                                
+                                            </span>
+                                            <span class="list-nav-label">Files Inventory Cycle</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="list-nav-item">
+                                <a href="#" class="list-nav-link">
+                                    <span class="list-nav-icon">
+                                        <i class="people-m" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="list-nav-label">User Management</span>
+                                    <span class="list-nav-expand">
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                               <ul class="list-nav-child">
+                                    <li class="list-nav-item list-nav-child-item">
+                                        <a href="#" class="list-nav-link">
+                                            <span class="list-nav-icon list-nav-icon-sm">
+                                                
+                                            </span>
+                                            <span class="list-nav-label">Manage Files</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-nav-item list-nav-child-item">
+                                        <a href="#" class="list-nav-link">
+                                            <span class="list-nav-icon list-nav-icon-sm">
+                                                
+                                            </span>
+                                            <span class="list-nav-label">Check In Files</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-nav-item list-nav-child-item">
+                                        <a href="#" class="list-nav-link">
+                                            <span class="list-nav-icon list-nav-icon-sm">
+                                                
+                                            </span>
+                                            <span class="list-nav-label">Check Out Files</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-nav-item list-nav-child-item">
+                                        <a href="#" class="list-nav-link">
+                                            <span class="list-nav-icon list-nav-icon-sm">
+                                                
+                                            </span>
+                                            <span class="list-nav-label">Files Inventory Cycle</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="list-nav-item">
+                                <a href="#" class="list-nav-link">
+                                    <span class="list-nav-icon">
+                                        <i class="device-m" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="list-nav-label">Device Management</span>
+                                    <span class="list-nav-expand">
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                                <ul class="list-nav-child">
+                                    <li class="list-nav-item list-nav-child-item">
+                                        <a href="#" class="list-nav-link">
+                                            <span class="list-nav-icon list-nav-icon-sm">
+                                                
+                                            </span>
+                                            <span class="list-nav-label">Manage Files</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-nav-item list-nav-child-item">
+                                        <a href="#" class="list-nav-link">
+                                            <span class="list-nav-icon list-nav-icon-sm">
+                                                
+                                            </span>
+                                            <span class="list-nav-label">Check In Files</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-nav-item list-nav-child-item">
+                                        <a href="#" class="list-nav-link">
+                                            <span class="list-nav-icon list-nav-icon-sm">
+                                                
+                                            </span>
+                                            <span class="list-nav-label">Check Out Files</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-nav-item list-nav-child-item">
+                                        <a href="#" class="list-nav-link">
+                                            <span class="list-nav-icon list-nav-icon-sm">
+                                                
+                                            </span>
+                                            <span class="list-nav-label">Files Inventory Cycle</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="list-nav-item">
+                                <a href="#" class="list-nav-link">
+                                    <span class="list-nav-icon">
+                                        <i class="settings-m" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="list-nav-label">Settings</span>
+                                    <span class="list-nav-expand">
+<!--                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>-->
+                                    </span>
+                                </a>
+<!--
+                                <ul class="list-nav-child">
+                                    <li class="list-nav-item list-nav-child-item">
+                                        <a href="#" class="list-nav-link">
+                                            <span class="list-nav-icon list-nav-icon-sm">
+                                                <i class="material-icons">M</i>
+                                            </span>
+                                            <span class="list-nav-label">Manage Files</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-nav-item list-nav-child-item">
+                                        <a href="#" class="list-nav-link">
+                                            <span class="list-nav-icon list-nav-icon-sm">
+                                                <i class="material-icons">C</i>
+                                            </span>
+                                            <span class="list-nav-label">Check In Files</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-nav-item list-nav-child-item">
+                                        <a href="#" class="list-nav-link">
+                                            <span class="list-nav-icon list-nav-icon-sm">
+                                                <i class="material-icons">C</i>
+                                            </span>
+                                            <span class="list-nav-label">Check Out Files</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-nav-item list-nav-child-item">
+                                        <a href="#" class="list-nav-link">
+                                            <span class="list-nav-icon list-nav-icon-sm">
+                                                <i class="material-icons">F</i>
+                                            </span>
+                                            <span class="list-nav-label">Files Inventory Cycle</span>
+                                        </a>
+                                    </li>
+                                </ul>
+-->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div class="page">
+            <div class="topbar-container">
+                <nav class="navbar bg-white text-secondary navbar-expand-sm py-0 topbar fixed">
+                    <button class="btn btn-flat-secondary btn-sm btn-icon mr-1 no-shadow d-none d-xl-block sidebar-toggle">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <button class="btn btn-flat-secondary btn-sm btn-icon mr-1 d-xl-none no-shadow sidebar-hide">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <div class="navbar-text ml-3 mt-3 d-block d-sm-block">
+                        <h5 class="m-0 text-theme page-title">Dashboard</h5>
+                        <div class="d-none d-sm-none d-md-block">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active">Home</li>
+                        </ol>
+                        </div>
+                    </div>
+
+                    <div class="ml-auto d-sm-flex">
+                        <div class="d-none d-sm-flex align-items-center">
+                            <input class="form-control collapsed topbar-search border-top-0 border-left-0 border-right-0 " type="search" placeholder="Search" aria-label="Search">
+                        </div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown no-caret mr-3">
+                                <a class="dropdown-toggle nav-link text-center" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<!--                                    <i class="fa fa-bell-o" aria-hidden="true"></i>-->
+                                   <span class="material-icons">notifications_active</span>
+                                    <span class="badge badge-warning">2</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right py-0" style="width:20rem" aria-labelledby="navbarDropdown">
+                                    <ul class="list-group list-group-linked border-top-0 border-left-0 border-right-0 list-group-linked">
+                                        <li class="list-group-item">
+                                            <div class="px-3 py-3">
+                                                <h6 class="m-0">Notifications (<span class="text-warning">12</span>)</h6>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="media py-2 px-3">
+                                                <div class="media-box media-box-xs rounded-circle bg-info text-white mt-1"><span class="material-icons">event</span></div>
+                                                <div class="media-body ml-3">
+                                                    <p class="text-sm">
+                                                        Alex has invited you to an event on<br>
+                                                        <span class="text-secondary ">12 jan 2012</span>
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="media py-2 px-3">
+                                                <div class="media-box media-box-xs rounded-circle bg-success text-white mt-1">
+                                                <span class="material-icons">event</span></div>
+                                                <div class="media-body ml-3">
+                                                    <p class="text-sm">
+                                                        New Company Policy for Holiday Season Parties<br>
+                                                        <span class="text-secondary ">12 jan 2012</span>
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a class="media py-2 px-3">
+                                                <div class="media-box media-box-xs rounded-circle bg-secondary text-white mt-1"><span class="material-icons">event</span></div>
+                                                <div class="media-body ml-3">
+                                                    <p class="text-sm">
+                                                        Your Leave application has been approved<br>
+                                                        <span class="text-secondary ">12 jan 2012</span>
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="list-group-item text-center">
+                                            <a class="dropdown-item empty-link text-info px-3 py-3">Load More</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            
+                            <li class="nav-item no-caret mr-3" style="color: #000;">
+                                <a class="nav-link text-center lout" role="button">
+                                    <span class="material-icons">exit_to_app</span> Logout
+                              </a>
+                            </li>
+                          
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="page-content">
+
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="card rectangle-7">
+                                <div class="card-body">
+                                    <div class="card-feature float-right">
+                                        <div class="media-box">
+                                            <i class="file-m-blue"></i>
+                                        </div>
+                                    </div>
+                                    <h5 class="card-title card-title1">
+                                        Files
+                                    </h5>
+                                    <div class="border-bot1"></div>
+                                    <h3 class="card-no">12424</h3>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="card rectangle-7">
+                                <div class="card-body">
+                                    <div class="card-feature float-right">
+                                        <div class="media-box">
+                                            <i class="assets-m-blue"></i>
+                                        </div>
+                                    </div>
+                                    <h5 class="card-title card-title1">
+                                        Assets
+                                    </h5>
+                                    <div class="border-bot1"></div>
+                                    <h3 class="card-no">543</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="card rectangle-7">
+                                <div class="card-body">
+                                    <div class="card-feature float-right">
+                                        <div class="media-box">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <h5 class="card-title card-title1">
+                                        Pending Check Ins
+                                    </h5>
+                                    <div class="border-bot1"></div>
+                                    <h3 class="card-no">14</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="card rectangle-7">
+                                <div class="card-body">
+                                    <div class="card-feature float-right">
+                                        <div class="media-box">
+                                            <i class="check-m-blue" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <h5 class="card-title card-title1">
+                                        Pending Check Outs
+                                    </h5>
+                                    <div class="border-bot1"></div>
+                                    <h3 class="card-no">05</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                            <div class="card rectangle-7">
+                                <div class="card-body">
+                                    <div class="card-feature float-right">
+                                        <div class="media-box">
+                                            <i class="people-m-blue"></i>
+                                        </div>
+                                    </div>
+                                    <h5 class="card-title card-title1">
+                                        Users
+                                    </h5>
+                                    <div class="border-bot1"></div>
+                                    <h3 class="card-no">20</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/popper.min.js"></script>
+    <script src="vendor/bootstrap.min.js"></script>
+    <script src="vendor/perfect-scrollbar.min.js"></script>
+
+    <script src="vendor/hammer.min.js"></script>
+    <script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="scripts/sidebar.min.js"></script>
+    <script src="scripts/collapsible-nav.min.js"></script>
+    <script src="vendor/color/color.min.js"></script>
+    <script src="scripts/colors.min.js"></script>
+    <script src="scripts/settings.min.js"></script>
+    <script src="scripts/card.min.js"></script>
+    <script src="scripts/simplify.min.js"></script>
+
+    <script src="vendor/Chart.min.js"></script>
+    <script src="vendor/d3.min.js"></script>
+    <script src="vendor/c3.min.js"></script>
+
+</body>
+
+</html>

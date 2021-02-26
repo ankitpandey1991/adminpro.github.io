@@ -1,0 +1,345 @@
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('../assets/font/SFProText-Regular.woff2') format('woff2'),
+        url('../assets/font/SFProText-Regular.woff') format('woff');    
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('../assets/font/SFProText-Light.woff2') format('woff2'),
+        url('../assets/font/SFProText-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('../assets/font/SFProText-Ultralight.woff2') format('woff2'),
+        url('../assets/font/SFProText-Ultralight.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('../assets/font/SFProText-Black.woff2') format('woff2'),
+        url('../assets/font/SFProText-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('../assets/font/SFProText-Medium.woff2') format('woff2'),
+        url('../assets/font/SFProText-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('../assets/font/SFProText-Semibold.woff2') format('woff2'),
+        url('../assets/font/SFProText-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('../assets/font/SFProText-Heavy.woff2') format('woff2'),
+        url('../assets/font/SFProText-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('../assets/font/SFProText-Thin.woff2') format('woff2'),
+        url('../assets/font/SFProText-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('../assets/font/SFProText-Bold.woff2') format('woff2'),
+        url('../assets/font/SFProText-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'SFProDisplay';
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+.brand-wrapper {
+    padding-top: 7px;
+    padding-bottom: 8px;
+}
+
+.brand-wrapper .logo {
+    height: 75px;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,1);
+}
+
+.login-section-wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding: 39px 12px 57px 200px;
+    background-color: #fff;
+}
+
+.text-reset {
+    font-family: SFProDisplay;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1f32fa!important;
+}
+
+@media (max-width: 991px) {
+    .login-section-wrapper {
+        padding-left: 50px;
+        padding-right: 50px;
+/*
+        background: #1f32fa;
+    color: #fff;
+*/
+    }
+}
+
+@media (max-width: 575px) {
+    .login-section-wrapper {
+        padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 100vh;
+    background: #1f32fa;
+    color: #fff;
+    }
+}
+
+.login-wrapper {
+    width: 300px;
+    max-width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+@media (max-width: 575px) {
+    .login-wrapper {
+        width: 100%;
+            background-color: #fff;
+    padding: 1.2rem;
+    border-radius: 4px;
+    box-shadow: 3px 5px 5px #0000006b;
+    }
+}
+
+.login-wrapper label {
+    font-family: 'SFProDisplay';
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #373a3c;
+}
+
+.login-wrapper .form-control {
+   font-family: 'SFProDisplay';
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: left;
+  color: #373a3c;
+        min-width: 130%;
+  
+}
+
+
+
+.btn-primarylog {
+    color: #fff;
+    background-color: #1f32fa;
+    border-color: #1f32fa;
+        margin-left: 112%;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2px;
+}
+
+.btn-primarylog:hover {
+    color: #fff;
+    background-color: #1f32fa;
+    border-color: #1f32fa;
+        margin-left: 112%;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2px;
+}
+
+.login-wrapper .form-control::-webkit-input-placeholder {
+    color: #b0adad;
+}
+
+.login-wrapper .form-control::-moz-placeholder {
+    color: #b0adad;
+}
+
+.login-wrapper .form-control:-ms-input-placeholder {
+    color: #b0adad;
+}
+
+.login-wrapper .form-control::-ms-input-placeholder {
+    color: #b0adad;
+}
+
+.login-wrapper .form-control::placeholder {
+    color: #b0adad;
+}
+
+.login-wrapper .login-btn {
+   padding: 10px 6px;
+    background-color: #1f32fa;
+    border-radius: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 14px;
+    float: right;
+}
+
+.login-wrapper .login-btn:hover {
+    border: 1px solid #1f32fa;
+    background-color: #fff;
+    color: #1f32fa;
+}
+
+.login-wrapper a.forgot-password-link {
+    color: #080808;
+    font-size: 14px;
+    text-decoration: underline;
+    display: inline-block;
+    margin-bottom: 54px;
+}
+
+@media (max-width: 575px) {
+    .login-wrapper a.forgot-password-link {
+        margin-bottom: 16px;
+    }
+    
+    .offset-n6 {
+     margin-left: 5%!important; 
+}
+    
+    .login-wrapper .form-control {
+   font-family: 'SFProDisplay';
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: left;
+  color: #373a3c;
+        min-width: 100%;
+  
+}
+
+
+
+.btn-primarylog {
+    color: #fff;
+    background-color: #1f32fa;
+    border-color: #1f32fa;
+    margin-left: auto;
+}
+
+.btn-primarylog:hover {
+    color: #fff;
+    background-color: #1f32fa;
+    border-color: #1f32fa;
+    margin-left: auto;
+}
+}
+
+@media (max-width: 375px){
+    .login-title span {
+    font-family: 'SFProDisplay';
+    font-size: 14px!important;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #363636;
+}
+}
+
+.login-wrapper-footer-text {
+    font-family: 'SFProDisplay';
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1.14;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.login-title {
+     font-family: 'SFProDisplay';
+  font-size: 33px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: .8;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+    margin-bottom: 25px;
+}
+
+.login-title span{
+    font-family: 'SFProDisplay';
+  font-size: 18px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #363636;
+}
+
+.login-img {
+    width: 100%;
+    height: 100vh;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: left;
+    object-position: left;
+}
+
